@@ -1,0 +1,31 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.logoNameContainer {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.name {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.emptySpace {
+  width: 50%;
+}
+
+.navigationContainer {
+  width: 25%;
+}
