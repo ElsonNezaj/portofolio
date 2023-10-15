@@ -1,19 +1,19 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import LogoReference from "../../assets/images/logo512.png";
 import { Typography } from "antd";
 
 export default function Header() {
   return (
     <div className={styles.headerContainer}>
       <div className={styles.logoNameContainer}>
-        <div className={styles.logoContainer}>
-          <img src={LogoReference} alt="logo" className={styles.logo} />
-        </div>
-        <Typography className={styles.name}>Elson Nezaj</Typography>
+        <Typography className={styles.name}>E&nbsp;.&nbsp;N</Typography>
       </div>
       <div className={styles.emptySpace} />
-      <div className={styles.navigationContainer}>Navigation</div>
+      <div className={styles.navigationContainer}>
+        <Typography className={styles.navigationLabel}>Projects</Typography>
+        <Typography className={styles.navigationLabel}>About</Typography>
+        <Typography className={styles.navigationLabel}>Contact</Typography>
+      </div>
     </div>
   );
 }
