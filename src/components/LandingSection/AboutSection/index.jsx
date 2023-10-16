@@ -5,7 +5,7 @@ import { SKILLS } from "../../../constants";
 
 export default function AboutSection() {
   return (
-    <div className={styles.aboutSectionContainer}>
+    <div id="about" className={styles.aboutSectionContainer}>
       <div className={styles.sectionTitleContainer}>
         <Typography className={styles.sectionTitleLabel}>ABOUT</Typography>
         <div className={styles.sectionTitleSubContainer}>

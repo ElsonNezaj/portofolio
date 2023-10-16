@@ -3,6 +3,9 @@ import styles from "./styles.module.scss";
 import { Typography } from "antd";
 
 export default function Header() {
+  const handleAboutClick = () => {
+    window.location.href = "#about";
+  };
   return (
     <div className={styles.headerContainer}>
       <div className={styles.logoNameContainer}>
@@ -10,7 +13,12 @@ export default function Header() {
       </div>
       <div className={styles.emptySpace} />
       <div className={styles.navigationContainer}>
-        <Typography className={styles.navigationLabel}>About</Typography>
+        <Typography
+          onClick={() => handleAboutClick()}
+          className={styles.navigationLabel}
+        >
+          About
+        </Typography>
         <Typography className={styles.navigationLabel}>Projects</Typography>
         <Typography className={styles.navigationLabel}>Contact</Typography>
       </div>

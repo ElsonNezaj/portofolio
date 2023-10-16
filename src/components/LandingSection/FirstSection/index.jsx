@@ -4,6 +4,10 @@ import { ArrowDownOutlined } from "@ant-design/icons";
 import { Typography } from "antd";
 
 export default function FirstSection() {
+  const handleAboutClick = () => {
+    window.location.href = "#about";
+  };
+
   return (
     <div className={styles.sectionContainer}>
       <div className={styles.titleContainer}>
@@ -14,7 +18,10 @@ export default function FirstSection() {
         </Typography>
       </div>
       <div className={styles.navigationContainer}>
-        <div className={styles.navigationItem}>
+        <div
+          onClick={() => handleAboutClick()}
+          className={styles.navigationItem}
+        >
           <Typography className={styles.navigationItemLabel}>
             ABOUT
             <ArrowDownOutlined />
