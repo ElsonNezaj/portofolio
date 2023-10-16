@@ -7,7 +7,7 @@ export default function Header() {
     window.location.href = "#about";
   };
   const handleProjectsClick = () => {
-    window.location.href = "#about";
+    window.location.href = "#projects";
   };
   return (
     <div className={styles.headerContainer}>

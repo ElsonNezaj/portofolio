@@ -9,7 +9,7 @@ export default function FirstSection() {
   };
 
   const handleProjectsClick = () => {
-    window.location.href = "#about";
+    window.location.href = "#projects";
   };
 
   return (
