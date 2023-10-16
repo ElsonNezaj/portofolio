@@ -7,6 +7,10 @@ import REDUX from "./assets/images/redux.svg";
 import GITHUB from "./assets/images/github.svg";
 import GITLAB from "./assets/images/gitlab.svg";
 
+import gsystem from "./assets/projects/gsystem.png";
+import payupme from "./assets/projects/payupme.png";
+import remus from "./assets/projects/remus.png";
+
 export const SKILLS = [
   {
     name: "HTML",
@@ -47,5 +51,29 @@ export const SKILLS = [
     name: "GITLAB",
     src: GITLAB,
     stars: 4,
+  },
+];
+
+export const PROJECTS = [
+  {
+    name: "GSystem",
+    teamProject: true,
+    finished: true,
+    desc: "GSystem is a Web Application, where it's main functionality is sport betting & livebetting, featuring casino and virtual games.",
+    src: gsystem,
+  },
+  {
+    name: "PayUpMe",
+    teamProject: true,
+    finished: true,
+    desc: "PayUpMe is an application that helps the user make payments to different providers and sites, depending on the user's needs.",
+    src: payupme,
+  },
+  {
+    name: "Remus",
+    teamProject: false,
+    finished: false,
+    desc: "Remus is a restaurant / market managing application, making your business easier to manage. ",
+    src: remus,
   },
 ];

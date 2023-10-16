@@ -6,6 +6,9 @@ export default function Header() {
   const handleAboutClick = () => {
     window.location.href = "#about";
   };
+  const handleProjectsClick = () => {
+    window.location.href = "#about";
+  };
   return (
     <div className={styles.headerContainer}>
       <div className={styles.logoNameContainer}>
@@ -19,7 +22,12 @@ export default function Header() {
         >
           About
         </Typography>
-        <Typography className={styles.navigationLabel}>Projects</Typography>
+        <Typography
+          onClick={() => handleProjectsClick()}
+          className={styles.navigationLabel}
+        >
+          Projects
+        </Typography>
         <Typography className={styles.navigationLabel}>Contact</Typography>
       </div>
     </div>

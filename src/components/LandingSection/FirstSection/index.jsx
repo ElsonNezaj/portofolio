@@ -8,6 +8,10 @@ export default function FirstSection() {
     window.location.href = "#about";
   };
 
+  const handleProjectsClick = () => {
+    window.location.href = "#about";
+  };
+
   return (
     <div className={styles.sectionContainer}>
       <div className={styles.titleContainer}>
@@ -27,7 +31,10 @@ export default function FirstSection() {
             <ArrowDownOutlined />
           </Typography>
         </div>
-        <div className={styles.navigationItem}>
+        <div
+          onClick={() => handleProjectsClick()}
+          className={styles.navigationItem}
+        >
           <Typography className={styles.navigationItemLabel}>
             PROJECTS
             <ArrowDownOutlined />
