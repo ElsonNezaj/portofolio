@@ -39,28 +39,30 @@
   font-size: 16px;
   font-family: "PT Sans Caption", sans-serif;
   letter-spacing: 2px;
-  opacity: 0.8;
+  opacity: 0.6;
   width: 22%;
   display: flex;
   justify-content: center;
   cursor: pointer;
   position: relative;
-  transition: all 0.3s;
-  &::before {
-    position: absolute;
+  transition: all 0.2s;
+
+  &::after {
     content: "";
+    position: absolute;
+    display: block;
     width: 0%;
     height: 2px;
     background-color: black;
     bottom: 0;
+    transition: width 0.2s ease-in;
   }
 
   &:hover {
     opacity: 1;
-    font-size: 17px;
+  }
 
-    &::before {
-      width: 100%;
-    }
+  &:hover:after {
+    width: 90%;
   }
 }
