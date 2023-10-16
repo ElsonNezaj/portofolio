@@ -10,8 +10,8 @@ export default function Header() {
       </div>
       <div className={styles.emptySpace} />
       <div className={styles.navigationContainer}>
-        <Typography className={styles.navigationLabel}>Projects</Typography>
         <Typography className={styles.navigationLabel}>About</Typography>
+        <Typography className={styles.navigationLabel}>Projects</Typography>
         <Typography className={styles.navigationLabel}>Contact</Typography>
       </div>
     </div>

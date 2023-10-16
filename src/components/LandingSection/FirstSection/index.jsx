@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { ArrowDownOutlined } from "@ant-design/icons";
 import { Typography } from "antd";
 
 export default function FirstSection() {
@@ -16,20 +16,20 @@ export default function FirstSection() {
       <div className={styles.navigationContainer}>
         <div className={styles.navigationItem}>
           <Typography className={styles.navigationItemLabel}>
-            projects
-            <ArrowRightAltIcon />
+            ABOUT
+            <ArrowDownOutlined />
           </Typography>
         </div>
         <div className={styles.navigationItem}>
           <Typography className={styles.navigationItemLabel}>
-            about
-            <ArrowRightAltIcon />
+            PROJECTS
+            <ArrowDownOutlined />
           </Typography>
         </div>
         <div className={styles.navigationItem}>
           <Typography className={styles.navigationItemLabel}>
-            contact
-            <ArrowRightAltIcon />
+            CONTACT
+            <ArrowDownOutlined />
           </Typography>
         </div>
       </div>

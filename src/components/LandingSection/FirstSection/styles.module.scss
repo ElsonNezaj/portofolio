@@ -56,14 +56,15 @@
 }
 
 .navigationItemLabel {
+  height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   font-family: "PT Sans Caption", sans-serif;
   font-weight: bold;
   font-size: 22px;
-  padding-left: 30px;
-  padding-top: 60px;
 
   svg {
     font-size: 30px;
