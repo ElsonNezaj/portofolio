@@ -9,6 +9,10 @@ export default function Header() {
   const handleProjectsClick = () => {
     window.location.href = "#projects";
   };
+  const handleContactClick = () => {
+    window.location.href = "#contact";
+  };
+
   return (
     <div className={styles.headerContainer}>
       <div className={styles.logoNameContainer}>
@@ -28,7 +32,12 @@ export default function Header() {
         >
           Projects
         </Typography>
-        <Typography className={styles.navigationLabel}>Contact</Typography>
+        <Typography
+          onClick={() => handleContactClick()}
+          className={styles.navigationLabel}
+        >
+          Contact
+        </Typography>
       </div>
     </div>
   );

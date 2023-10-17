@@ -61,6 +61,7 @@ export const PROJECTS = [
     finished: true,
     desc: "GSystem is a Web Application, where it's main functionality is sport betting & livebetting, featuring casino and virtual games.",
     src: gsystem,
+    url: "https://test-demo.gsystem.live/",
   },
   {
     name: "PayUpMe",
@@ -68,6 +69,7 @@ export const PROJECTS = [
     finished: true,
     desc: "PayUpMe is an application that helps the user make payments to different providers and sites, depending on the user's needs.",
     src: payupme,
+    url: "https://dev-demo.payupme.com/",
   },
   {
     name: "Remus",

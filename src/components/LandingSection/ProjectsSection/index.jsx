@@ -33,6 +33,11 @@ export default function ProjectsSection() {
                 <Typography className={styles.projectDescription}>
                   {project.desc}
                 </Typography>
+                {project.url && (
+                  <Typography className={styles.projectLink}>
+                    Project Link : <a href={project.url}>{project.url}</a>
+                  </Typography>
+                )}
                 <Typography
                   className={`
                   ${styles.projectState} 

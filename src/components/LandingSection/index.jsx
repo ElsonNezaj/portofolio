@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import FirstSection from "./FirstSection";
 import AboutSection from "./AboutSection";
 import ProjectsSection from "./ProjectsSection";
+import ContactSection from "./ContactSection";
 
 export default function LandingSection() {
   return (
@@ -10,6 +11,7 @@ export default function LandingSection() {
       <FirstSection />
       <AboutSection />
       <ProjectsSection />
+      <ContactSection />
     </div>
   );
 }

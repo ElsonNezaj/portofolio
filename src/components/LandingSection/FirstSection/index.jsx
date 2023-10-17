@@ -12,6 +12,10 @@ export default function FirstSection() {
     window.location.href = "#projects";
   };
 
+  const handleContactClick = () => {
+    window.location.href = "#contact";
+  };
+
   return (
     <div className={styles.sectionContainer}>
       <div className={styles.titleContainer}>
@@ -40,7 +44,10 @@ export default function FirstSection() {
             <ArrowDownOutlined />
           </Typography>
         </div>
-        <div className={styles.navigationItem}>
+        <div
+          onClick={() => handleContactClick()}
+          className={styles.navigationItem}
+        >
           <Typography className={styles.navigationItemLabel}>
             CONTACT
             <ArrowDownOutlined />
