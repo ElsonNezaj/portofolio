@@ -1,3 +1,5 @@
+@import "../../vars";
+
 .headerContainer {
   height: 100px;
   display: flex;
@@ -11,6 +13,12 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  @media (max-width: $small-laptop-breakpoint) {
+    width: 30%;
+  }
+  @media (max-width: $tablet-breakpoint) {
+    width: 50%;
+  }
 }
 
 .logo {
@@ -26,6 +34,12 @@
 
 .emptySpace {
   width: 50%;
+  @media (max-width: $small-laptop-breakpoint) {
+    width: 40%;
+  }
+  @media (max-width: $tablet-breakpoint) {
+    width: 0%;
+  }
 }
 
 .navigationContainer {
@@ -33,6 +47,14 @@
   display: flex;
   align-items: center;
   gap: 15%;
+  @media (max-width: $small-laptop-breakpoint) {
+    width: 30%;
+  }
+  @media (max-width: $tablet-breakpoint) {
+    width: 50%;
+    justify-content: flex-end;
+    margin-right: 50px;
+  }
 }
 
 .navigationLabel {
@@ -46,6 +68,15 @@
   cursor: pointer;
   position: relative;
   transition: all 0.2s;
+
+  @media (max-width: $small-desktop-breakpoint) {
+    font-size: 14px;
+    width: fit-content;
+  }
+
+  @media (max-width: $small-laptop-breakpoint) {
+    font-size: 14px;
+  }
 
   &::after {
     content: "";

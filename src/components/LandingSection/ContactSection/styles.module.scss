@@ -1,9 +1,15 @@
+@import "../../../vars";
+
 .contactSectionContainer {
   width: 70%;
   margin: 0 auto;
   margin-top: 100px;
   border-top: 1px solid black;
   height: 60vh;
+
+  @media (max-width: $small-desktop-breakpoint) {
+    height: 80%;
+  }
 }
 
 .sectionTitle {

@@ -1,3 +1,5 @@
+@import "../../../vars";
+
 .sectionContainer {
   width: 100%;
   height: calc(100vh - 102px);
@@ -53,6 +55,11 @@
       opacity: 1;
     }
   }
+
+  @media (max-width: $tablet-breakpoint) {
+    height: 50%;
+    align-items: center;
+  }
 }
 
 .navigationItemLabel {
@@ -65,6 +72,10 @@
   font-family: "PT Sans Caption", sans-serif;
   font-weight: bold;
   font-size: 22px;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 20px;
+  }
 
   svg {
     font-size: 30px;
