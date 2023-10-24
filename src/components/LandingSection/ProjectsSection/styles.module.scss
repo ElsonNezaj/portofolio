@@ -4,11 +4,17 @@
   width: 70%;
   margin: 0 auto;
   border-top: 1px solid black;
+  @media (max-width: $tablet-breakpoint) {
+    width: 80%;
+  }
 }
 
 .sectionTitle {
   font-size: 70px;
   font-family: "Anton", sans-serif;
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 60px;
+  }
 }
 
 .projectsContainer {
@@ -58,12 +64,18 @@
   .projectName {
     font-family: "Anton", sans-serif;
     font-size: 35px;
+    @media (max-width: $tablet-breakpoint) {
+      font-size: 30px;
+    }
   }
 
   .teamProjectLabel {
     font-family: "PT Sans Caption", sans-serif;
     font-size: 22px;
     opacity: 0.5;
+    @media (max-width: $tablet-breakpoint) {
+      font-size: 17px;
+    }
   }
 }
 
@@ -88,6 +100,21 @@
     &:hover {
       color: black;
       text-decoration: underline;
+    }
+  }
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 14px;
+
+    a {
+      background-color: black;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+
+      &:active {
+        background-color: white;
+        color: black;
+      }
     }
   }
 }

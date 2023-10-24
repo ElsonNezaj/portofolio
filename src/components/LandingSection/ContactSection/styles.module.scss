@@ -10,11 +10,19 @@
   @media (max-width: $small-desktop-breakpoint) {
     height: 80%;
   }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 80%;
+  }
 }
 
 .sectionTitle {
   font-family: "Anton", sans-serif;
   font-size: 70px;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 60px;
+  }
 }
 
 .contactInfoContainer {
@@ -29,6 +37,10 @@
     flex-direction: column;
     gap: 30px;
   }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 60%;
+  }
 }
 
 .formMessage {
@@ -36,6 +48,9 @@
   font-family: "PT Sans Caption", sans-serif;
   opacity: 0.7;
   margin-bottom: 25px;
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 17px;
+  }
 }
 
 .contactInput {
@@ -100,6 +115,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: $tablet-breakpoint) {
+    width: 40%;
+  }
 }
 
 .infoRow {
@@ -112,11 +130,18 @@
   font-family: "Anton", sans-serif;
   font-size: 18px;
   opacity: 0.7;
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 16px;
+  }
 }
 .infoRowInfo {
   font-family: "PT Sans Caption", sans-serif;
   font-size: 16px;
   font-weight: bold;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 14px;
+  }
 
   a {
     color: black;
