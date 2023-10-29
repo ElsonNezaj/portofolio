@@ -10,6 +10,9 @@ import GITLAB from "./assets/images/gitlab.svg";
 import gsystem from "./assets/projects/gsystem.png";
 import payupme from "./assets/projects/payupme.png";
 import remus from "./assets/projects/remus.png";
+import gsystemLogo from "./assets/projects/gsystemLogo.jpg";
+import payupmeLogo from "./assets/projects/payupmeLogo.svg";
+import remusLogo from "./assets/projects/remusLogo.svg";
 
 export const SKILLS = [
   {
@@ -61,6 +64,7 @@ export const PROJECTS = [
     finished: true,
     desc: "GSystem is a Web Application, where it's main functionality is sport betting & livebetting, featuring casino and virtual games.",
     src: gsystem,
+    logo: gsystemLogo,
     url: "https://test-demo.gsystem.live/",
   },
   {
@@ -69,6 +73,7 @@ export const PROJECTS = [
     finished: true,
     desc: "PayUpMe is an application that helps the user make payments to different providers and sites, depending on the user's needs.",
     src: payupme,
+    logo: payupmeLogo,
     url: "https://dev-demo.payupme.com/",
   },
   {
@@ -76,6 +81,7 @@ export const PROJECTS = [
     teamProject: false,
     finished: false,
     desc: "Remus is a restaurant / market managing application, making your business easier to manage. ",
+    logo: remusLogo,
     src: remus,
   },
 ];

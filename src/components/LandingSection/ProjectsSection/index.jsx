@@ -10,43 +10,12 @@ export default function ProjectsSection() {
       <div className={styles.projectsContainer}>
         {PROJECTS.map((project, index) => {
           return (
-            <div className={styles.project}>
+            <div key={index} className={styles.project}>
               <img
-                src={project.src}
+                src={project.logo}
                 alt={project.name}
-                className={`
-                ${styles.projectImage}
-                ${(index + 1) % 2 === 0 && styles.secondOrder}
-                `}
+                className={styles.projectImage}
               />
-              <div className={styles.projectInfo}>
-                <div className={styles.projectTitle}>
-                  <Typography className={styles.projectName}>
-                    {project.name}
-                  </Typography>
-                  {project.teamProject && (
-                    <Typography className={styles.teamProjectLabel}>
-                      &#40; Team Project &#41;
-                    </Typography>
-                  )}
-                </div>
-                <Typography className={styles.projectDescription}>
-                  {project.desc}
-                </Typography>
-                {project.url && (
-                  <Typography className={styles.projectLink}>
-                    Project Link : <a href={project.url}>{project.url}</a>
-                  </Typography>
-                )}
-                <Typography
-                  className={`
-                  ${styles.projectState} 
-                  ${project.finished ? styles.greenState : styles.redState}
-                  `}
-                >
-                  {project.finished ? "Finished" : "Not Finished"}
-                </Typography>
-              </div>
             </div>
           );
         })}
