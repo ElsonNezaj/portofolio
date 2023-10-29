@@ -16,6 +16,9 @@ export default function ProjectsSection() {
                 alt={project.name}
                 className={styles.projectImage}
               />
+              <Typography className={styles.projectName}>
+                {project.name}
+              </Typography>
             </div>
           );
         })}

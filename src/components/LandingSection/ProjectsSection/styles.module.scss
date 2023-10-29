@@ -11,6 +11,7 @@
 
 .sectionTitle {
   font-size: 70px;
+  text-align: center;
   font-family: "Anton", sans-serif;
   @media (max-width: $tablet-breakpoint) {
     font-size: 60px;
@@ -20,10 +21,17 @@
 .projectsContainer {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .project {
   width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px #00000091;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .projectImage {
